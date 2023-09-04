@@ -26,13 +26,18 @@ function NewProject() {
         .then((data) => {
             console.log(data)
             // redirect
-            navigate('/projects', {message: 'Projeto criado com sucesso!'})
+            navigate('/projects', { message: 'Projeto criado com sucesso!' })
         })
         .catch((err) => console.log(err))
 
     }
 
+    function mandar() {
+        navigate('/projects', { message: 'Projeto criado com sucesso!' })
+    }
+
     return (
+        
         <div className={styles.newproject_container}>
             <h1>Criar Projeto</h1>
             <p>Crie seu projeto para depos adicionar os serviços</p>
